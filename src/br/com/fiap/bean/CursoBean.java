@@ -7,12 +7,12 @@ import br.com.fiap.bo.CursoBO;
 
 @ManagedBean
 public class CursoBean {
-	
+
 	private float nac, am, ps, enade, media;
 	
 	@EJB
 	private CursoBO bo;
-
+	
 	public void calcular(){
 		media = bo.calcularMedia(nac, ps, am, enade);
 	}
@@ -55,18 +55,6 @@ public class CursoBean {
 
 	public void setMedia(float media) {
 		this.media = media;
-	}
-
-	public CursoBean(float nac, float am, float ps, float enade) {
-		super();
-		this.nac = nac;
-		this.am = am;
-		this.ps = ps;
-		this.enade = enade;
-	}
-
-	public CursoBean() {
-		super();
 	}
 	
 }

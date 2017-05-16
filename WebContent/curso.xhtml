@@ -7,26 +7,25 @@
 <h:head></h:head> 
 <body> 
 
+	<h2>Cálculo da média - 2017</h2>
 	<h:form>
 		<h:panelGrid columns="2">
-			
 			<h:outputLabel value="NAC" for="nac" />
 			<h:inputText value="#{cursoBean.nac}" id="nac"/>
 			
-			
 			<h:outputLabel value="AM" for="am" />
-			<h:inputText value="#{cursoBean.am}" id="am"/>
+			<h:inputText value="#{cursoBean.am}" id="am" />
 			
 			<h:outputLabel value="PS" for="ps" />
-			<h:inputText value="#{cursoBean.ps}" id="ps"/>
+			<h:inputText value="#{cursoBean.ps}" id="ps" />
 			
 			<h:outputLabel value="ENADE" for="enade" />
-			<h:inputText value="#{cursoBean.enade}" id="enade"/>
+			<h:inputText value="#{cursoBean.enade}" id="enade" />
 			
-			<h:commandButton action="#{cursoBean.calcular()}" value="MEDIA" for="media" />
-			<h:outputText value="#{cursoBean.media}" id="media"/>
+			<h:commandButton action="#{cursoBean.calcular()}" value="Calcular" />
+			<h:outputText value="#{cursoBean.media}" />			
 		</h:panelGrid>
 	</h:form>
-
+	
 </body> 
 </html>

@@ -7,14 +7,17 @@
 <h:head></h:head> 
 <body> 
 
-	<h1>Compra de BitCoins</h1>
+	<h1>qual disciplina você possui mais dificuldade?</h1>
 	<h:form>
 		<h:panelGrid columns="2">
-			<h:inputText value="#{carrinhoBean.valor}" />
-			<h:commandButton action="#{carrinhoBean.adicionar()}" 
-													value="Adicionar" />
+			<h:inputText value="#{enqueteBean.sim}" />
+			<h:commandButton action="#{enqueteBean.votarSim()}" 
+													value="Sim" />
+													
+			<h:inputText value="#{enqueteBean.nao}" />
+			<h:commandButton action="#{enqueteBean.votarNao()}" 
+													value="Nao" />
 			
-			<h:outputText value="Total: #{carrinhoBean.total}" />
 		</h:panelGrid>
 	</h:form>
 	

@@ -1,10 +1,10 @@
 package br.com.fiap.bo;
 
-import javax.ejb.Local;
+import javax.ejb.Remote;
 
-@Local
+@Remote
 public interface CarrinhoCompraBO {
-	
-	double adiconarBitCoin(double bitcoin);
+
+	double adicionarBitCoin(double bitcoin);
 	
 }
